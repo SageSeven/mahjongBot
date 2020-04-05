@@ -7,3 +7,30 @@
 {"response":"PASS","debug":"[\"1\",\"0\",\"0\",\"1\",\"0\",\"T9\",\"B5\",\"T3\",\"F1\",\"T5\",\"F2\",\"W9\",\"W6\",\"B6\",\"F4\",\"T5\",\"W6\",\"T4\",\"H8\"]"}
 {"response":"PASS","debug":"[\"3\",\"0\",\"BUHUA\",\"H3\"]"}
 {"response":"PASS","debug":"[\"3\",\"0\",\"DRAW\"]"}
+
+{"requests":["0 0 2"],"responses":[]}
+"1 0 0 1 0 T6 B1 B4 T8 T6 W9 J2 B4 T4 W1 W4 W2 B1 H8"
+"3 0 BUHUA H3"
+"2 B8"
+
+{"requests":["0 1 2"],"responses":[]}
+"1 0 0 1 0 T9 B5 T3 F1 T5 F2 W9 W6 B6 F4 T5 W6 T4 H8"
+"3 0 BUHUA H3"
+"3 0 DRAW"
+
+{"requests":["0 2 2"],"responses":[]}
+"1 0 0 1 0 T2 B6 W5 F2 B7 W4 T7 B4 F1 T5 F3 B8 T1 H8"
+"3 0 BUHUA H3"
+"3 0 DRAW"
+
+{"requests":["0 3 2"],"responses":[]}
+"1 0 0 1 0 W2 W8 T8 T5 W1 W1 W3 B7 B4 W3 W7 T6 T4 H8"
+"3 0 BUHUA H3"
+"3 0 DRAW"
+
+{"response":null,"debug":"[\"0\",\"3\",\"3\"]","error":"程序正常运行 / Program was executed normally"}
+
+{"debug":"botzone inception log:\n1 line read from stdin\n1 line read from stdin\n...done\nstdin sent to child, begin reading output\nset alarm: 16 second(s).\nnormal exited (raw = 256) with status = 1\nverdict = RE\n-- RE occurred --\nworking dir = /var/sandbox/box0/\nhostname:\n","error":"错误：程序崩溃 / ERROR: Program raised a runtime error","output":"stderr:\nstart to close fds...\nTraceback (most recent call last):\n  File \"/usr/lib/python3.6/runpy.py\", line 193, in _run_module_as_main\n    \"__main__\", mod_spec)\n  File \"/usr/lib/python3.6/runpy.py\", line 85, in _run_code\n    exec(code, run_globals)\n  File \"5e89bf5241dfbb5e9196e496.py36/__main__.py\", line 17, in <module>\n  File \"5e89bf5241dfbb5e9196e496.py36/__main__.py\", line 12, in __main__\n  File \"5e89bf5241dfbb5e9196e496.py36/Monitor.py\", line 20, in analyze_request\nUnboundLocalError: local variable 'result' referenced before assignment\n\n\nstdout:\n"}
+
+{"debug":"botzone inception log:\n1 line read from stdin\n1 line read from stdin\n...done\nstdin sent to child, begin reading output\nset alarm: 16 second(s).\n1 line read from child\n1 line read from child\n1 line read from stdin\n1 line read from stdin\n...done\nsignaled by sig = 9\nverdict = RE\n-- RE occurred --\nworking dir = /var/sandbox/box0/\nhostname:\n","error":"错误：程序崩溃 / ERROR: Program raised a runtime error","output":"stderr:\nstart to close fds...\n\n\nstdout:\n{\"response\": \"PASS\", \"debug\": \"\"}\n>>>BOTZONE_REQUEST_KEEP_RUNNING<<<\n"}
+
