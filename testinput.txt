@@ -1,1 +1,9 @@
-{"requests":["1 2 0"]}
+{"requests":["0 1 2"],"responses":[]}
+"1 0 0 1 0 T9 B5 T3 F1 T5 F2 W9 W6 B6 F4 T5 W6 T4 H8"
+"3 0 BUHUA H3"
+"3 0 DRAW"
+
+{"response":"PASS","debug":"[\"0\",\"1\",\"2\"]"}
+{"response":"PASS","debug":"[\"1\",\"0\",\"0\",\"1\",\"0\",\"T9\",\"B5\",\"T3\",\"F1\",\"T5\",\"F2\",\"W9\",\"W6\",\"B6\",\"F4\",\"T5\",\"W6\",\"T4\",\"H8\"]"}
+{"response":"PASS","debug":"[\"3\",\"0\",\"BUHUA\",\"H3\"]"}
+{"response":"PASS","debug":"[\"3\",\"0\",\"DRAW\"]"}

@@ -5,10 +5,12 @@ from PutData import put_data
 
 def __main__():
     monitor = Monitor()
+    time = 0
     while True:
-        cur_request = get_data()
+        time += 1
+        cur_request = get_data(time)
         (cur_action, debug_str) = monitor.analyze_request(cur_request)
-        put_data(cur_action)
+        put_data(cur_action, debug_str)
 
 
 if __name__ == '__main__':
